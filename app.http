@@ -1,0 +1,55 @@
+GET http://localhost:3000/api/categories
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYW1fcmljaGFyZDQ1IiwiaWF0IjoxNzQ0NDY1OTMyfQ._W24_sAIpn0b3vZA67gRmEABPKdkMKZfz9SXvFjSkkk
+
+
+###
+GET http://localhost:3000/api/categories/3
+
+###
+POST http://localhost:3000/api/auth/login/
+Content-Type: application/json
+
+{
+  "username": "sethu112",
+  "password": "sethu234"
+}
+
+###
+PUT http://localhost:3000/api/categories/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYW1fcmljaGFyZDQ1IiwiaWF0IjoxNzQ0NDY1OTMyfQ._W24_sAIpn0b3vZA67gRmEABPKdkMKZfz9SXvFjSkkk
+
+{
+  "name": "Updated Electronics Category",
+  "item_count": 30,
+  "image_url": "updated-image.jpg"
+}
+
+
+
+###
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard45",
+  "password": "richard_56745",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+###
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "sethu",
+  "password": "sethu123",
+  "name": "sethu",
+  "gender": "male"
+}
+
+
+
+###
+
+ GET http://localhost:3000/api/categories/3
